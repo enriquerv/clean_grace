@@ -30,8 +30,7 @@
 				    <br>
 				    <div class="tab-content">
 				        @include('admin.modules.'.$active.'.panels')
-
-								<nav>
+						<nav>
 					        <ul class="pagination pager wizard">
 					            <li class="page-item previous">
 					                {!! link_to('#', trans('strings.wizard.previous'), ["class"=>"page-link"]) !!}
@@ -43,7 +42,7 @@
 					                {!! link_to('#', trans('strings.wizard.finish'), ["class"=>"page-link"]) !!}
 					            </li>
 					        </ul>
-								</nav>
+						</nav>
 				    </div>
 				</div>
 			{!! Form::close() !!}
