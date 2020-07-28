@@ -11,10 +11,10 @@
 
 	<!-- BANNER -->
     <div>
-        <img src="https://via.placeholder.com/1592x234?text=1592x234_banner" width="100%">
+        <img src="{{ env('APP_URL') }}/assets/images/banner_2.png" width="100%">
     </div>
 
-	
+
 	<!-- QUIENES SOMOS -->
 	<section class="mt-5 mb-5 white">
 		<div class="container">
@@ -79,9 +79,9 @@
 				</div>
 				<div class="col-md-2 text-center">
 					<img src="https://via.placeholder.com/350x350" width="75%">
-					<p class="font-weight-bold">Trabajo en equipo</p>				
+					<p class="font-weight-bold">Trabajo en equipo</p>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</section>
 

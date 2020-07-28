@@ -1,7 +1,13 @@
 <section>
   <div class="row">
     <div class="col-12">
-      <img src="https://via.placeholder.com/1639x187?text=1639x187_navbar" width="100%">
+      <img src="{{ env('APP_URL') }}/assets/images/navbar_bg.png" width="100%">
+      <a href="https://www.facebook.com" target="_blank">
+        <img class="img_social social_1" src="{{ env('APP_URL') }}/assets/images/icon_face.png">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img class="img_social social_2" src="{{ env('APP_URL') }}/assets/images/icon_insta.png">
+      </a>
     </div>
   </div>
 </section>
@@ -18,16 +24,15 @@
       <a class="nav-item nav-link text-center {{ $active == 'aboutus' ? 'bolder' : '' }}" href="{{ URL::route('aboutus') }}">
         Nosotros
       </a>
-        
+
       <div class="btn-group nav-item nav-link text-center pointer">
-        <span>Servicios</span>
-        <span class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="{{ $active == 'protocols' || $active == 'services' ? 'bolder' : '' }}">Servicios</span>
           <span class="sr-only">Toggle Dropdown</span>
         </span>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Productos #1</a>
-          <a class="dropdown-item" href="#">Productos #2</a>
-          <a class="dropdown-item" href="#">Productos #3</a>
+          <a class="dropdown-item item_service" href="{{ URL::route('protocols') }}">Protocolos sanitarios</a>
+          <a class="dropdown-item item_service" href="{{ URL::route('services') }}">Servicio de sanitización</a>
         </div>
       </div>
 
@@ -43,12 +48,6 @@
   </div>
 </nav>
 
-<section class="row">
-  <div class="col-12">
-    <img src="https://via.placeholder.com/1622x15?text=1622x15_banner" width="100%">
-  </div>
-</section>
-
 <style>
   .nav-link{
     padding: 0 !important;
@@ -61,4 +60,17 @@
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+  .item_service{
+    color: #24437a !important;
+    font-size: 20px;
+  }
+  .img_social{
+    width: 60px;
+    position: absolute;
+    z-index: 999999999;
+    bottom: 10px;
+    right: 0;
+  }
+  .social_1{ margin-right: 120px; }
+  .social_2{ margin-right: 30px; }
 </style>

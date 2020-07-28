@@ -11,7 +11,7 @@
 
 	<!-- BANNER -->
 	<div>
-		<img src="https://via.placeholder.com/1592x234?text=1592x234_banner" width="100%">
+		<img src="{{ env('APP_URL') }}/assets/images/banner_3.png" width="100%">
 	</div>
 
 

@@ -9,7 +9,7 @@
 
     <!-- BANNER -->
     <div>
-        <img src="https://via.placeholder.com/1592x234?text=1592x234_banner" width="100%">
+        <img src="{{ env('APP_URL') }}/assets/images/banner_4.png" width="100%">
     </div>
 
     <section class="mt-5 white">
@@ -27,15 +27,15 @@
                     <div class="form-group">
                         <label for="Telefono">Teléfono</label>
                         <input type="text" class="form-control" id="Telefono">
-                    </div>  
+                    </div>
                     <div class="form-group">
                         <label for="Mensaje">Mensaje</label>
                         <textarea class="form-control" id="Mensaje" rows="5"></textarea>
-                    </div>  
+                    </div>
                     <div class="form-group text-center">
                         <button class="btn btn-primary pl-5 pr-5">Enviar</button>
-                    </div>              
-                    
+                    </div>
+
                 </form>
             </div>
             <div class="col-md-6 pt-5 pl-5 pb-5 pr-5">
@@ -50,7 +50,7 @@
                         <img src="https://via.placeholder.com/350x350" width="50%">
                     </div>
                     <div class="col-md-12 mt-5 text-center" style="font-size: 20px">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         <br><br>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptatem ea cum ullam veritatis doloribus tempora totam, nemo aliquam, nam porro, dolores, voluptas quidem. Tempore facere saepe officiis officia labore!
                     </div>

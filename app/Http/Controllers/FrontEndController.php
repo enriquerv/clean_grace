@@ -45,6 +45,11 @@ class FrontEndController extends Controller
         return view('services', compact($this->compact));
     }
 
+    public function protocols(){
+        $active = 'protocols';
+        return view('protocols', compact($this->compact));
+    }
+
     public function galery(){
         $active = 'galery';
         return view('galery', compact($this->compact));

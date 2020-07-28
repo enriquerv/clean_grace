@@ -12,21 +12,19 @@
 <section class="container-fluid">
 	<div class="row mt-3">
 		<div class="col-12">
-			<img src="https://via.placeholder.com/1592x234?text=1592x234_banner" width="100%">
+			<img src="{{ env('APP_URL') }}/assets/images/banner_1.png" width="100%">
 		</div>
-
-
 		{{-- MINI WIDGET PARA DIVISIÓN HR E IMAGENES --}}
 		<div class="col-md-4 mt-5 lines-left-right">
 			<hr class="hr-red mr-0">
 		</div>
 		<div class="col-md-4 mt-5 text-center lines-mid">
-			<img src="https://via.placeholder.com/132x132?text=132x132_icono" width="100%">
+			<img src="{{ env('APP_URL') }}/assets/images/icon_1.png" width="100%">
 		</div>
 		<div class="col-md-4 mt-5 lines-left-right">
 			<hr class="hr-red ml-0">
 		</div>
-		
+
 		<div class="col-md-6 offset-md-3 mt-2">
 			<p class="p-normal text-center">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, minima numquam quod nihil! Debitis atque, laborum cumque. Ut non velit laudantium? Hic optio culpa at delectus atque dicta! Natus, quisquam.
@@ -38,7 +36,7 @@
 			<hr class="hr-red mr-0">
 		</div>
 		<div class="col-md-4 mt-5 text-center lines-mid">
-			<img src="https://via.placeholder.com/132x132?text=132x132_icono" width="100%">
+			<img src="{{ env('APP_URL') }}/assets/images/icon_2.png" width="100%">
 		</div>
 		<div class="col-md-4 mt-5 lines-left-right">
 			<hr class="hr-red ml-0">
@@ -73,7 +71,7 @@
 			<hr class="hr-red mr-0">
 		</div>
 		<div class="col-md-4 mt-5 text-center lines-mid">
-			<img src="https://via.placeholder.com/132x132?text=132x132_icono" width="100%">
+			<img src="{{ env('APP_URL') }}/assets/images/icon_3.png" width="100%">
 		</div>
 		<div class="col-md-4 mt-5 lines-left-right">
 			<hr class="hr-red ml-0">
@@ -91,12 +89,12 @@
 			<hr class="hr-red mr-0">
 		</div>
 		<div class="col-md-4 mt-5 text-center lines-mid">
-			<img src="https://via.placeholder.com/132x132?text=132x132_icono" width="100%">
+			<img src="{{ env('APP_URL') }}/assets/images/icon_4.png" width="100%">
 		</div>
 		<div class="col-md-4 mt-5 lines-left-right">
 			<hr class="hr-red ml-0">
 		</div>
-		
+
 		<div class="col-12 mb-5 row">
 			<div class="col-md-3 text-center">
 				<img src="https://via.placeholder.com/295x295?text=295x295_icono_valores" width="70%">
@@ -111,7 +109,7 @@
 				<img src="https://via.placeholder.com/295x295?text=295x295_icono_valores" width="70%">
 			</div>
 		</div>
-		
+
 
 	</div>
 </section>
