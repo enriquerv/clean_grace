@@ -52,7 +52,26 @@ class FrontEndController extends Controller
 
     public function galery(){
         $active = 'galery';
-        return view('galery', compact($this->compact));
+
+        $images = [
+            'galeria_1.png',
+            'galeria_2.png',
+            'galeria_3.png',
+            'galeria_4.png',
+            'galeria_5.png',
+            'galeria_6.png',
+            'galeria_7.png',
+            'galeria_8.png',
+            'galeria_9.png',
+            'galeria_10.png',
+            'galeria_11.png',
+            'galeria_12.png',
+            'galeria_13.png',
+            'galeria_14.png',
+            'galeria_15.png',
+        ];
+
+        return view('galery', compact($this->compact, 'images'));
     }
 
     public function getContact(){
@@ -62,8 +81,9 @@ class FrontEndController extends Controller
     }
 
     public function postContact(Request $request){
-        $item = Contact::create($request->all());
-
+        // dd($request->all());
+        //$item = Contact::create($request->all());
+        $item = true;
         if($item){
             // Send mails.
             SendMail::createMailContact($request);

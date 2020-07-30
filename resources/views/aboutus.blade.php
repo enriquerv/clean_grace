@@ -18,72 +18,69 @@
 	<!-- QUIENES SOMOS -->
 	<section class="mt-5 mb-5 white">
 		<div class="container">
-			<h1 class="text-center">¿Quienes somos?</h1>
-			<p class="text-justify mt-3" style="width: 70%; margin: 0 auto; font-size: 18px;">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat laborum beatae, iure dolore eligendi accusantium molestias ut quos illum obcaecati sequi nam, enim ullam provident cupiditate amet? Nihil, ipsa, dignissimos!
+			<h1 class="text-center" data-aos="zoom-in" data-aos-duration="1000">¿Quienes somos?</h1>
+			<p class="text-justify mt-3 desc" data-aos="zoom-in" data-aos-duration="1000">
+				Somos una empresa dedicada a la eliminación de microorganismos patógenos, para que tú y tu familia se sientan protegidos. Contamos con un equipo técnico de ultima generación, personal altamente capacitado, productos de calidad y permisos sanitarios.
+				<br><br>
+				Para ello utilizamos procesos de nebulización en frío de ultra bajo volumen (ULV), con soluciones sanitizantes que son 100%  biodegradables e inocuas al ser humano y mascotas.
 			</p>
 			<div class="container row mt-5 mb-5">
-
 				<!-- MISION -->
-				<div class="col-md-3">
-					<img src="https://via.placeholder.com/350x350" width="100%">
+				<div class="col-md-3 mt-3">
+					<img src="{{ env('APP_URL') }}/assets/images/mision.png" data-aos="zoom-in" data-aos-duration="1000" width="100%">
 				</div>
-				<div class="col-md-9">
+				<div class="col-md-9" data-aos="zoom-in" data-aos-duration="1000">
 					<h2 class="text-left mt-5 mb-4">Misión</h2>
 					<p class="text-justify">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, qui aspernatur quos, ipsa amet aliquam ad optio quod aliquid autem sint. Voluptatum at officia iure quod, amet repudiandae quisquam quo.
-					</p>
-				</div>
-
-				<!-- VISION -->
-				<div class="col-md-9">
-					<h2 class="text-right mt-5 mb-4">Visión</h2>
-					<p class="text-justify">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quaerat porro sit, recusandae optio dolorem vero debitis maiores ad modi quibusdam dicta ratione obcaecati excepturi molestias, architecto suscipit distinctio, vel?
-					</p>
-				</div>
-				<div class="col-md-3">
-					<img src="https://via.placeholder.com/350x350" width="100%">
-				</div>
-
-				<!-- OBJETIVOS -->
-				<div class="col-md-3">
-					<img src="https://via.placeholder.com/350x350" width="100%">
-				</div>
-				<div class="col-md-9">
-					<h2 class="text-left mt-5 mb-4">Objetivos</h2>
-					<p class="text-justify">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolore similique quisquam. Beatae quas et ducimus sapiente aliquid repellat eveniet ut unde autem reiciendis, sequi, exercitationem doloribus facere repellendus soluta.
-						<br>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab fuga esse libero porro architecto nisi dignissimos quaerat, magnam odio eius, quis delectus, nobis blanditiis atque deleniti et, consequuntur iusto iste!
+						Satisfacer las necesidades de sanitización e implementación de protocolos sanitarios de todos nuestros clientes garantizando siempre su seguridad y la de su entorno, utilizando productos de vanguardia, con laconfianza de ser siempre asesorados por expertos en el ramo.
 					</p>
 				</div>
 
 				<!-- VALORES -->
 				<div class="col-12 mt-5 mb-4"><h2 class="text-center">Valores</h2></div>
-				<div class="col-md-2 offset-1 text-center">
-					<img src="https://via.placeholder.com/350x350" width="75%">
+				<div class="mt-5 col-6 col-sm-6 col-md-6 col-lg-2 offset-lg-1 text-center" data-aos="flip-left" data-aos-duration="1000">
+					<img src="{{ env('APP_URL') }}/assets/images/seguridad.png" width="75%">
+					<p class="font-weight-bold">Seguridad</p>
+				</div>
+				<div class="mt-5 col-6 col-sm-6 col-md-6 col-lg-2 text-center" data-aos="flip-left" data-aos-duration="1000">
+					<img src="{{ env('APP_URL') }}/assets/images/responsabilidad.png" width="75%">
 					<p class="font-weight-bold">Responsabilidad</p>
 				</div>
-				<div class="col-md-2 text-center">
-					<img src="https://via.placeholder.com/350x350" width="75%">
-					<p class="font-weight-bold">Compromiso</p>
-				</div>
-				<div class="col-md-2 text-center">
-					<img src="https://via.placeholder.com/350x350" width="75%">
+				<div class="mt-5 col-6 col-sm-6 col-md-6 col-lg-2 text-center" data-aos="flip-left" data-aos-duration="1000">
+					<img src="{{ env('APP_URL') }}/assets/images/honestidad.png" width="75%">
 					<p class="font-weight-bold">Honestidad</p>
 				</div>
-				<div class="col-md-2 text-center">
-					<img src="https://via.placeholder.com/350x350" width="75%">
-					<p class="font-weight-bold">Comunicación</p>
+				<div class="mt-5 col-6 col-sm-6 col-md-6 col-lg-2 text-center" data-aos="flip-left" data-aos-duration="1000">
+					<img src="{{ env('APP_URL') }}/assets/images/compromiso.png" width="75%">
+					<p class="font-weight-bold">Compromiso</p>
 				</div>
-				<div class="col-md-2 text-center">
-					<img src="https://via.placeholder.com/350x350" width="75%">
-					<p class="font-weight-bold">Trabajo en equipo</p>
+				<div class="mt-5 col-6 col-sm-6 col-md-6 col-lg-2 text-center" data-aos="flip-left" data-aos-duration="1000">
+					<img src="{{ env('APP_URL') }}/assets/images/calidad.png" width="75%">
+					<p class="font-weight-bold">Calidad</p>
+				</div>
+
+				<div class="col-12 text-center mt-5 mb-5">
+					<img src="{{ env('APP_URL') }}/assets/images/aboutus/cv_face.png" class="mb-3 img-cv">
+					<p class="text-cv mt-3">Director General</p>
+					<p class="text-cv mt-3">Maestro en Ciencias</p>
+					<p class="text-cv mt-3">Alan Ricardo Quiroz Moguel</p>
+					<p class="text-cv mt-3">Maestría en Farmacología</p>
+				</div>
+				<div class="col-6 text-left mt-5 mb-5">
+					<img src="{{ env('APP_URL') }}/assets/images/aboutus/cv_1.png" width="100%" class="mb-3">
+				</div>
+				<div class="col-6 text-right mt-5 mb-5">
+					<img src="{{ env('APP_URL') }}/assets/images/aboutus/cv_2.png" width="100%" class="mb-3">
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<style>
+		.desc{ width: 80%; margin: 0 auto; font-size: 18px; }
+		.text-cv{ width: 80%; margin: 0 auto; font-size: 24px; }
+		.img-cv{ min-width: 200px; }
+	</style>
 
 
 @endsection

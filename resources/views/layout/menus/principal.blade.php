@@ -2,10 +2,10 @@
   <div class="row">
     <div class="col-12">
       <img src="{{ env('APP_URL') }}/assets/images/navbar_bg.png" width="100%">
-      <a href="https://www.facebook.com" target="_blank">
+      <a href="https://www.facebook.com/Clean-Grace-101961094934416/" target="_blank">
         <img class="img_social social_1" src="{{ env('APP_URL') }}/assets/images/icon_face.png">
       </a>
-      <a href="https://www.instagram.com" target="_blank">
+      <a href="https://www.instagram.com/cleangrace.mx/" target="_blank">
         <img class="img_social social_2" src="{{ env('APP_URL') }}/assets/images/icon_insta.png">
       </a>
     </div>
@@ -31,8 +31,8 @@
           <span class="sr-only">Toggle Dropdown</span>
         </span>
         <div class="dropdown-menu">
-          <a class="dropdown-item item_service" href="{{ URL::route('protocols') }}">Protocolos sanitarios</a>
           <a class="dropdown-item item_service" href="{{ URL::route('services') }}">Servicio de sanitización</a>
+          <a class="dropdown-item item_service" href="{{ URL::route('protocols') }}">Protocolos sanitarios</a>
         </div>
       </div>
 

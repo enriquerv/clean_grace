@@ -18,7 +18,7 @@ class SendMail extends Model
         $mail = new PHPMailer(true);
 
         /* Cuando el proyecto se suba al servidor, descomentar la siguiente línea para que el envío de corre funcione correctamente y no llegue a SPAM */
-        // $mail->isSMTP();
+        $mail->isSMTP();
 
         $mail->SMTPAuth = true;
 
@@ -158,11 +158,11 @@ class SendMail extends Model
 
         try {
             $mail = self::SMTPMail();
-            $mail->CharSet = 'UTF-8'; // set charset to utf8
+            $mail->CharSet = 'UTF-8';
             $mail->Subject = $subject;
             $mail->MsgHTML($msg);
             $mail->addAddress($data->email, $data->name);
-            // $mail->addBCC('email', 'name');
+            $mail->addBCC('erodriguez@inncredi.com', 'Enrique Rodriguez');
             $mail->send();
         } catch (phpmailerException $e) {
             dd($e);
@@ -184,11 +184,13 @@ class SendMail extends Model
 
         try {
             $mail = self::SMTPMail();
-            $mail->CharSet = 'UTF-8'; // set charset to utf8
+            $mail->CharSet = 'UTF-8';
             $mail->Subject = $subject;
             $mail->MsgHTML($msg);
-            $mail->addAddress(env('MAIL_ADMIN_ADDRESS'), env('MAIL_ADMIN_NAME'));
-            // $mail->addBCC('email', 'name');
+            // $mail->addAddress('inncredi@gmail.com', 'Inncredi');
+            $mail->addAddress('alanquiroz@clean-grace.com', 'Alan Quiroz');
+            $mail->addAddress('cleangrace.mx@gmail.com', 'Clean Grace');
+            $mail->addBCC('erodriguez@inncredi.com', 'Enrique Rodriguez');
             $mail->send();
         } catch (phpmailerException $e) {
             dd($e);

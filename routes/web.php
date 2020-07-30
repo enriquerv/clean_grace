@@ -30,7 +30,7 @@ Route::group(array('middleware' => 'langMiddleware'), function () {
   Route::get('services', array('as' => 'services', 'uses' => 'FrontEndController@services'));
   Route::get('protocols', array('as' => 'protocols', 'uses' => 'FrontEndController@protocols'));
   Route::get('contact', array('as' => 'contact', 'uses' => 'FrontEndController@getContact'));
-  Route::post('contact', array('as' => 'contact', 'uses' => 'FrontEndController@postContact'));
+  Route::post('contact', array('as' => 'post_contact', 'uses' => 'FrontEndController@postContact'));
   Route::get('thanks', array('as' => 'thanks', 'uses' => 'FrontEndController@thanks'));
 
   /*

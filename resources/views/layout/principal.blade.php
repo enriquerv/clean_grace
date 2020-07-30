@@ -2,6 +2,7 @@
 <html lang="{{ \App::getLocale() }}" {{ Request::is("login") ? "class=h-100" : "" }}>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> {{ env('APP_NAME') }} | @yield('title') </title>
@@ -17,6 +18,8 @@
         {{ Html::style('assets/plugins/timepicker/jquery.timepicker.min.css') }}
         {{-- Core CSS file --}}
         {{ Html::style( 'assets/css/core.css?'.filemtime('assets/css/core.css') ) }}
+        {{-- AOS animation CSS --}}
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         {{-- Custom CSS file --}}
         {{ Html::style( 'assets/css/custom.css?'.filemtime('assets/css/custom.css') ) }}
         <script> var direction = "{{ config('app.path') }}" </script>
@@ -49,6 +52,10 @@
         @else
             {{ Html::script("assets/plugins/formvalidation/dist/js/language/en_US.js") }}
         @endif
+
+        {{-- AOS animation js --}}
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script> AOS.init(); </script>
 
         {{-- DateTimePicker plugin --}}
         {{ Html::script("assets/plugins/datetimepicker/datepicker.js") }}
